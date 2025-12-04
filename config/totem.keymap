@@ -36,6 +36,36 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+
+        LT_PAREN {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <13 12>;
+        };
+
+        LT_BRACE {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <2 3>;
+        };
+
+        LT_BRACKET {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <23 24>;
+        };
+
+        RT_PAREN {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <16 17>;
+        };
+
+        RT_BRACE {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <6 7>;
+        };
+
+        RT_BRACKET {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <27 28>;
+        };
     };
 
     macros {
@@ -77,10 +107,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &kp Q       &kp L       &kp U         &kp COMMA    &kp PERIOD       &kp F        &kp W        &kp R         &kp Y       &kp P
-                  &mt LGUI E  &mt LALT I  &mt LCTRL A   &mt LSHFT O  &kp MINUS        &kp K        &mt RSHFT T  &mt RCTRL N   &mt RALT S  &mt RGUI H
-&kp LEFT_CONTROL  &kp Z       &kp X       &kp C         &kp V        &kp SEMICOLON    &kp G        &kp D        &kp M         &kp J       &kp B       &kp SLASH
-                                          &kp LEFT_GUI  &kp TAB      &lt NAV SPACE    &lt SYM RET  &kp BSPC     &kp LEFT_ALT
+                  &kp Q       &kp L       &kp U         &kp COMMA    &kp PERIOD       &kp F      &kp W        &kp R         &kp Y       &kp P
+                  &mt LGUI E  &mt LALT I  &mt LCTRL A   &mt LSHFT O  &kp MINUS        &kp K      &mt RSHFT T  &mt RCTRL N   &mt RALT S  &mt RGUI H
+&kp LEFT_CONTROL  &kp Z       &kp X       &kp C         &kp V        &kp SEMICOLON    &kp G      &kp D        &kp M         &kp J       &kp B       &kp SLASH
+                                          &kp LEFT_GUI  &kp SPACE    &lt 1 TAB        &lt 2 RET  &kp BSPC     &kp LEFT_ALT
             >;
         };
 
@@ -103,10 +133,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp N7        &kp N8        &kp N9        &kp KP_PLUS
-            &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS
-&caps_word  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
-                                   &trans    &trans     &trans      &mo ADJ   &kp KP_N0     &trans
+            &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp E     &kp F  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_N9        &kp KP_PLUS
+            &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp C     &kp D  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
+&caps_word  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp A     &kp B  &kp KP_N1        &kp KP_N2        &kp KP_NUMBER_3  &kp KP_MULTIPLY  &trans
+                                   &trans    &trans     &trans    &mo 3  &kp KP_N0        &kp KP_DOT
             >;
         };
 
@@ -132,7 +162,7 @@
         &kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS      &kp RA(U)             &kp SQT                &kp DQT
         &kp RA(A)    &trans       &kp RA(S)  &trans    &trans       &kp MINUS  &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RA(O)
 &trans  &kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans       &kp GRAVE  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BSLH   &trans
-                                  &trans     &gif      &mo ADJ      &trans     &kp C_PP      &trans
+                                  &trans     &gif      &mo 3        &trans     &kp C_PP      &trans
             >;
         };
 
